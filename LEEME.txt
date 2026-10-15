@@ -1,0 +1,28 @@
+PINBALL PLAYA
+=============
+Contenido:
+  www/     el juego (HTML5): se abre en cualquier navegador, tambien en el telefono
+  .github/ receta para que GitHub fabrique el APK por ti (sin instalar nada)
+  package.json, capacitor.config.json  (los usa la receta del APK)
+
+CONTROLES
+  Telefono: mantén pulsado el lanzador (abajo a la derecha) y suelta.
+            Toca la mitad izquierda / derecha de la pantalla para los fliperes.
+  Teclado:  Z o flecha izquierda = fliperes izquierdos
+            M o flecha derecha   = fliperes derechos
+            Espacio (mantener y soltar) = lanzar     N = nueva partida   X = sonido
+
+OPCION A - JUGAR YA EN EL TELEFONO (la mas simple, sin APK)
+  1. Crea una cuenta gratis en github.com y un repositorio nuevo (publico), por ejemplo "pinball".
+  2. "Add file > Upload files": arrastra TODO el contenido de esta carpeta (incluida la carpeta www y .github).
+  3. En el repositorio: Settings > Pages > Source: "Deploy from a branch", rama main, carpeta /(root). Guarda.
+  4. Espera 1-2 minutos. La direccion sera https://TU-USUARIO.github.io/pinball/www/
+  5. Abre esa direccion en Chrome del telefono y elige menu > "Anadir a pantalla de inicio".
+     Queda como una app a pantalla completa y funciona sin conexion. Pasale el enlace a tus amigos.
+
+OPCION B - OBTENER EL APK
+  1. Con el repositorio del paso anterior: pestana "Actions" > "Crear APK" > "Run workflow".
+  2. Tarda unos minutos. Al terminar, abre la ejecucion y descarga "pinball-playa-apk" (un zip con app-debug.apk).
+  3. Pasa el APK a los telefonos (WhatsApp, Drive, cable) y abrelo. Android pedira permitir
+     "instalar apps de origen desconocido" para esa aplicacion: aceptalo.
+  Es un APK de prueba (debug): sirve para ti y tus amigos, no para subirlo a Play Store.

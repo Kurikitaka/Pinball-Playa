@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="theme-color" content="#06182c">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="img/icon-192.png">
+<title>Pinball Playa</title>
+<style>
+  html,body{margin:0;height:100%;background:#06182c;overflow:hidden;overscroll-behavior:none;
+            -webkit-user-select:none;user-select:none;-webkit-touch-callout:none;-webkit-tap-highlight-color:transparent}
+  canvas{display:block;touch-action:none;position:fixed;left:0;top:0}
+  #btns{position:fixed;top:calc(8px + env(safe-area-inset-top));right:8px;display:flex;gap:8px;z-index:5}
+  #btns button{width:42px;height:42px;border-radius:21px;border:2px solid rgba(255,255,255,.55);
+               background:rgba(6,24,44,.65);color:#fff;font-size:20px;line-height:1;padding:0}
+</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+<div id="btns"><button id="mute" aria-label="Sonido">&#128266;</button><button id="fs" aria-label="Pantalla completa">&#9974;</button></div>
+<script src="geom.js"></script>
+<script src="physics.js"></script>
+<script src="render.js"></script>
+<script src="game.js"></script>
+</body>
+</html>

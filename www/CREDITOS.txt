@@ -1,0 +1,3 @@
+Graficos: "Beach Side Pinball Assets" de ChiliGames (OpenGameArt.org), licencia CC0.
+Sonidos: generados por codigo para este juego.
+Fisica, dibujo y programa: creados con Claude.
